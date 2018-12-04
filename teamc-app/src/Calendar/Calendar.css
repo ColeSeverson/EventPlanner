@@ -1,0 +1,82 @@
+.calendar-div {
+    position: absolute;
+    height: 89%;
+    width: 85%;
+    right: 0;
+    bottom: 0; 
+    top: 11%;
+    background-color: #3b3b3b;  
+}
+.calendar-column {
+    float: left;
+    height: 100%;
+    width: 13%;
+    border-style: solid;
+    background-color: white;
+    border: 1px solid black;
+}
+.calendar-column h1 {
+    font-size: 18px;
+    font-family: arial;
+    padding-left: 10px;
+}
+.calendar-hour {
+    float: top;
+    font-family: arial;
+    padding-left: 10px;
+}
+.calendar-busy {
+    float: top;
+    font-family: arial;
+    padding-left: 10px;
+    background: #F5984C;
+    opacity: 0.8;
+}
+.calendar-hour-highlighted {
+    float: top;
+    font-family: arial;
+    padding-left: 10px;
+}
+.calendar-block {
+    position: absolute;
+    background: red;
+    width: 13%;
+}
+
+.calendar-formDiv{
+    position: absolute;
+    z-index: 100;
+    background: #3b3b3b;
+    padding: 10px;
+    font-family: arial;
+    text-align: center;
+    top: 10%;
+    right: 33%;
+    width: 40%;
+    border: 3px solid #E4426B;
+    border-radius: 3px;
+}
+.calendar-formDiv h1{
+    font-size: 24px;
+}
+.calendar-formDiv h2{
+    font-size: 16px;
+}
+.calendar-formCancel, .calendar-formExport {
+    position: sticky;
+    display: inline-block;
+    font-size: 12px;
+    font: center;
+    transition: 0.3s;
+    border: 3px solid #E4426B;
+    color: #E4426B;
+    background-color: #3b3b3b;
+    margin: 10px;
+    border-radius: 3px;
+}
+.calendar-lengthField, .calendar-nameField{
+    position: sticky;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

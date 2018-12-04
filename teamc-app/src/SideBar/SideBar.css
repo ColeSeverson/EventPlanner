@@ -1,0 +1,57 @@
+/* The side nav menu */
+.sideBar-div {
+  	height: 690px;
+    width: 15%;
+    overflow-x: hidden;
+    padding-top: 120px;
+    transition: 0.5s;
+    float: left;
+    background-color: #3b3b3b;
+    font: left;
+}
+.sideBar-importBtn, .sideBar-exportBtn, .sideBar-friendsBtn, .sideBar-friendsSubmitBtn {
+    padding: 3px 8px 3px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font: center;
+    display: block;
+    transition: 0.3s;
+    border: 3px solid #E4426B;
+    color: #E4426B;
+    background-color: #3b3b3b;
+    margin: 10px;
+    border-radius: 3px;
+}
+.sideBar-div button:hover {
+    border: 3px solid #b3b3b3;
+    border-radius: 3px;
+}
+.sideBar-div h1 {
+    left: 0;
+}
+.sideBar-listItemBtn {
+	background:url(trash.png) no-repeat;
+    height: 27px;
+    width: 20px;
+    position: absolute;
+    border: 0px;
+}
+.sideBar-div li {
+	list-style-type: none;
+	text-align: left;
+}
+.sideBar-listItem{
+    position: relative;
+    right: 28px;
+    padding: 8px;
+}
+.sideBar-div ul{
+    text-decoration: none;
+    font-size: 16px;
+    font: center;
+    display: block;
+    transition: 0.3s;
+    background-color: #3b3b3b;
+    margin: 10px;
+    border-radius: 3px;
+}

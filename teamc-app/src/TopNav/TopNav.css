@@ -1,0 +1,28 @@
+/* The top van menu */
+.topNav-div {
+    width: 100%;
+    height: 13%;
+    position: absolute;
+    background-color: #3b3b3b;
+}
+.topNav-div button {
+    float: right;
+    right: 10px;
+    position: absolute;
+    border: 0px;
+    color: #E4426B;
+    background-color: #3b3b3b;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: underline;
+}
+.topNav-div button:hover{
+    color: #b3b3b3;
+}
+.topNav-div img {
+    float: left;
+    height: 100px;
+    width: 100px;
+    padding: 8px 0px 0px 8px;
+}
+
