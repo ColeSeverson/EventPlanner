@@ -9,9 +9,9 @@ import axios from 'axios';
 export function makeAPICall(method, req_type, data) {
     // return a function that calls
     // makes the then function valid, which allows us to access the response data
-    return axios({
+    /*  return axios({
         method,
-        url: "https://cesiumplanner.appspot.com/_ah/api/cesiumplanner/v1/" + req_type,
+        url: "None" + req_type,
         data,
     })
         // must wait for the api call to complete before we can return data
@@ -26,5 +26,6 @@ export function makeAPICall(method, req_type, data) {
         .catch((error) => {
             console.log(error);
             return null;
-        });
+        });*/
+    return 0;
 };

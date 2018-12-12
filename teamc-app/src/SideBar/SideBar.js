@@ -157,8 +157,8 @@ class SideBar extends Component {
         /*
          *  get the next event id and user id that we should use
          */
-        makeAPICall("get", "high_eid", null).then(res => this.setState({eid: res.data.uid}));
-        makeAPICall("get", "high_uid", null).then(res => this.props.updateState({uid: res.data.uid}));
+        //makeAPICall("get", "high_eid", null).then(res => this.setState({eid: res.data.uid}));
+        //makeAPICall("get", "high_uid", null).then(res => this.props.updateState({uid: res.data.uid}));
     }
 
     //returns jsx for buttons and list
@@ -197,12 +197,12 @@ class AddFriends extends Component{
     handleClick() { 
         //This will have to be replaced with an https request
         //this.props.friendsList.push(this.state.inputValue);
-        makeAPICall('post', 'retrieve_uid', {friend: this.state.inputValue}).then((res) => {
+        /*makeAPICall('post', 'retrieve_uid', {friend: this.state.inputValue}).then((res) => {
             if(res.data.uid === 0) {
                 window.alert("Friend not found");
                 return 0;
-            }
-            makeAPICall("post", "retrieve_all", {uid: res.data.uid}).then((res2) => {
+            }/*
+        /*makeAPICall("post", "retrieve_all", {uid: res.data.uid}).then((res2) => {
                 console.log(res2.data);
                 for(var i = 0; i < res2.data.events.length; i++) {
                     res2.data.events[i].start = moment(res2.data.events[i].start, "YYYY-MM-DDTHH:mm:ss");
@@ -212,7 +212,7 @@ class AddFriends extends Component{
                 this.props.friendsList.push(res2.data);
                 this.props.updateState(this.props.friendsList);
             });
-        });
+        });*/
 
         this.setState({ inputValue:"" });
         this.toggle();
