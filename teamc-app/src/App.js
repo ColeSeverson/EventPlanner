@@ -63,7 +63,6 @@ class App extends Component {
             myUid: 1,
             uid: 0,
             username: "",
-            url:"https://cesiumplanner.appspot.com/_ah/api/cesiumplanner/v1/",
         };
         this.updateState = this.updateState.bind(this);
     }
@@ -76,7 +75,7 @@ class App extends Component {
     render() {
         return (
             <div className="app-div">
-                <SideBar uid={this.state.uid} username = { this.state.username } myUid= { this.state.myUid } friendsList = { this.state.friendsList } updateState = { this.updateState } calendarDisplayList = { this.state.calendarDisplayList } url = { this.state.url }/>
+                <SideBar uid={this.state.uid} username = { this.state.username } myUid= { this.state.myUid } friendsList = { this.state.friendsList } updateState = { this.updateState } calendarDisplayList = { this.state.calendarDisplayList }/>
                 <TopNav myUid={this.state.myUid} uid = {this.state.uid} friendsList = { this.state.friendsList } username = { this.state.username } myUid = { this.state.myUid } updateState = { this.updateState } />
                 <Calendar myUid={this.state.myUid} updateState = {this.updateState} displayList = { this.state.calendarDisplayList } />
             </div>
