@@ -63,7 +63,7 @@ class App extends Component {
             myUid: -1,
             uid: 0,
             username: "",
-            url:"", //insert the url for the hosted database here
+            url:"https://cesiumplanner.appspot.com/_ah/api/cesiumplanner/v1/",
         };
         this.updateState = this.updateState.bind(this);
     }

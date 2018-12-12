@@ -11,7 +11,7 @@ export function makeAPICall(method, req_type, data) {
     // makes the then function valid, which allows us to access the response data
     return axios({
         method,
-        url: this.props.url + req_type,
+        url: "https://cesiumplanner.appspot.com/_ah/api/cesiumplanner/v1/" + req_type,
         data,
     })
         // must wait for the api call to complete before we can return data

@@ -34,12 +34,12 @@ class Calendar extends Component {
         this.handleNumberChange = this.handleNumberChange.bind(this);
     }
     notLoggedIn() {
-        /*        if(this.props.myUid === -1) {
+        if(this.props.myUid === -1) {
             window.alert("Please Log In!");
             return true;
         }else {
             return false;
-        }*/
+        }
     }
     createListElements(){
         var list = [];
